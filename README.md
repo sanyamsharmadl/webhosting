@@ -1,2 +1,0 @@
-# sony-music
- Sony Music
