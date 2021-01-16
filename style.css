@@ -1,0 +1,872 @@
+/* ******************************************* */
+/* ********** General styling **************** */
+/* ******************************************* */
+
+/* importing fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Armata&display=swap');
+
+
+/* custom properties */
+:root {
+  /* background color */
+  --bg-color-primary: #eee;
+  /* more colours may come here */
+  --bg-color-blue: #2dbecd;
+
+  /* text color */
+  --text-color-primary: #666;
+  --text-color-primary-hover: #999;
+  /* more colours may come here */
+  --text-color-blue: #2dbecd;
+
+  /* button colour */
+  --bg-button-primary: #000;
+  --bg-buttom-primary-hover: #286090;
+  /* more colours may come here */
+
+}
+
+/* sets Gr8P container width to auto
+/* to allow full width elements */
+.portal-container {
+    width: auto;
+}
+
+.portal-region.portal-region-dynamic, .portal-region.portal-region-form {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* makes scrolling smooth */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Armata!important;
+    color: var(--text-color-primary);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+/* each page component is wrapped in a section tag */
+section.section {
+    margin: 80px 0 80px 0;
+    overflow: auto;
+}
+/* the container gives a max width to content */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* typography */
+h1 {
+    line-height: 30px;
+}
+
+h2 {
+    font-size: 40px;
+    color: var(--text-color-blue);
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    line-height:50px;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: var(--text-color-primary);
+    line-height: 1.3;
+}
+
+.title-black-box {
+    background-color: #000;
+	text-transform: uppercase;
+	padding: 20px;
+	margin-left: -115px;
+	letter-spacing: 1;
+}
+
+.title-black-box-2 {
+    background-color: #000;
+	text-transform: uppercase;
+	padding: 20px;
+	letter-spacing: 1;
+}
+
+
+p {
+
+	line-height: 22px;
+}
+
+
+/* GRID */
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.col {
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.letter-spacing {
+    letter-spacing: 0.5;
+}
+
+/* ******************************************* */
+/* **************** Utilities **************** */
+/* ******************************************* */
+
+/* ******** TEXT CENTERED ********** */
+
+
+.red-background {
+	background-color: rgba(201, 31, 39, 0.83);
+	padding: 20px 80px 20px 20px;
+	max-width: 480px;
+}
+
+.hero2 .red-background {
+    max-width: 480px;
+}
+
+.red-url {
+    color: #C91F27;
+	text-transform: uppercase;
+}
+
+.red-url-2 {
+    color: #C91F27;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.text-left {
+    text-align: left!important;
+}
+
+/* ******** MARGIN 0 ******** */
+.mb-0 {
+    margin-bottom: 0!important;
+}
+
+.mt-0 {
+    margin-top: 0!important;
+}
+
+.pt-0 {
+    padding-top: 0!important;
+}
+
+.pb-0 {
+    padding-bottom: 0!important;
+}
+
+.pt-20 {
+    padding-top: 20px!important;
+}
+
+/* ******** NO BORDER ********** */
+.no-border {
+    border: none!important;
+}
+
+.rounded-border {
+    border-radius: 6px!important;
+}
+
+/* text colour */
+.text-white {
+    color: #fff!important;
+}
+.text-blue {
+    color: var(--text-color-blue)!important;
+}
+
+/* subheadline */
+.subheadline {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 22px;
+  padding-bottom: 10px;
+
+
+}
+
+/* background colours */
+.bg-primary {
+    background-color: var(--bg-color-primary)!important;
+}
+
+.bg-blue {
+    background-color: var(--bg-color-blue)!important;
+}
+
+/* ******************************************* */
+/* *************** Components **************** */
+/* ******************************************* */
+
+/* *********** HEADER ************ */
+header {
+    display: block;
+    background: #000;
+}
+
+.navbar {
+    padding-right: 0px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	display: flex;
+    flex-wrap: nowrap;
+    background-color: #000;
+	align-items:center;
+	position:relative;
+}
+
+.navbar-brand {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+	flex:1;
+}
+
+.navbar-menu a {
+	color: #fff;
+	text-align: right;
+	font-size:18px;
+	margin-right:0px;
+	text-transform: uppercase;
+}
+
+.navbar-menu a:last-of-type {
+	margin-right:0px;
+	margin-left: 30px;
+}
+/* ********** logo ************* */
+.navbar-brand img {
+    margin-left: -20;
+    display: inline-block;
+	margin-bottom: -15px;
+}
+/* when svg is used */
+.navbar-brand svg {
+    fill: var(--text-color-primary);
+    height: 30px;
+}
+
+nav.navbar > img {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    height: 16px;
+}
+
+nav.navbar {
+	align-items: baseline;
+}
+
+/* ************ HERO ************* */
+section.hero {
+	padding-top:60px;
+  padding-bottom: 60px;
+    background: url(https://sony.gr8people.eu/index.gp?method=cappservices.getPublicImage&cdn=562a2a031297924464387c2c10b021b8292e333e&cid=500056&type=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+section.hero2 {
+	padding-top: 130px;
+  padding-bottom: 130px;
+    background: url(https://sony.gr8people.eu/index.gp?method=cappservices.getPublicImage&cdn=5c326cad1524b144e540f8babbd6cd5e23e753a2&cid=500056&type=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.hero h1.headline {
+    margin-top: 42;
+    color: #fff;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+	text-transform: uppercase;
+}
+
+.hero2 h1.headline {
+    margin: 0;
+    color: #fff;
+    font-size: 40px;
+	line-height: 50px;
+    font-weight: 400;
+	text-transform: uppercase;
+}
+
+.hero .container {
+    padding-right: 0px;
+    padding-left: 0px;
+    /*margin-bottom: 120; */
+}
+
+/* ******************************* */
+/* ********* JUMBOTRON *********** */
+/* ******************************* */
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: var(--bg-color-primary);
+    border-radius: 0rem;
+}
+
+.jumbotron h2 {
+    color: var(--text-color-blue);
+    font-weight: 400;
+}
+
+.jumbotron-container .container {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+/* ********** CTA ************ */
+
+.cta {
+    padding: 15px;
+    background-color: var(--bg-color-primary);
+}
+
+.cta h2 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: var(--text-color-primary);
+}
+
+a.custom-button {
+    text-decoration: none;
+	text-transform: uppercase;
+
+}
+
+/* ******************************* */
+/* ************ BUTTON *********** */
+/* ******************************* */
+.custom-button {
+	display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px 25px 15px 25px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-radius: 8px;
+	background-color: #c91f27;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEwMCAxMDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0iaGF0MCIgZ3JhZGllbnRVbml0cz0ib2JqZWN0Qm91bmRpbmdCb3giIHgxPSI1MCUiIHkxPSI5NCUiIHgyPSI1MCUiIHkyPSI1Ljk5OTk5OTk5OTk5OTk5JSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM5ZTE0MWEiIHN0b3Atb3BhY2l0eT0iMSIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjOTFmMjciIHN0b3Atb3BhY2l0eT0iMSIvPgogICA8L2xpbmVhckdyYWRpZW50PgoKPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCIgaGVpZ2h0PSIxMDAiIGZpbGw9InVybCgjaGF0MCkiIC8+Cjwvc3ZnPg==);
+    background-image: -moz-linear-gradient(bottom, #9e141a 6%, #c91f27 94%);
+    background-image: -o-linear-gradient(bottom, #9e141a 6%, #c91f27 94%);
+    background-image: -webkit-linear-gradient(bottom, #9e141a 6%, #c91f27 94%);
+    background-image: linear-gradient(bottom, #9e141a 6%, #c91f27 94%);
+	margin-top: 24px;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.custom-button-black {
+    display: inline-block;
+    font-weight: 400;
+    margin-bottom:42;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    background-color: var(--bg-button-primary);
+    border: 1px solid transparent;
+    padding: 15px 25px 15px 25px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    border-radius: 8px;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+	text-transform: uppercase;
+}
+
+.custom-button:hover {
+    color: #ccc;
+    background: #c91f27;
+}
+
+.custom-button-black:hover {
+    color: #ccc;
+}
+
+/* ******************************* */
+/* ************* CARD ************ */
+/* ******************************* */
+.card {
+    border: 1px solid rgba(0,0,0,.125);
+    margin-bottom: 20px;
+    border-radius: 0px;
+    margin-right: 30px;
+}
+
+.row .card:last-of-type {
+    margin-right: 0px;
+}
+
+/* ******** card with background color ********** */
+.card.background {
+    background-color: var(--bg-color-primary);
+}
+
+.card.three-column {
+    flex-basis: 31%;
+}
+
+.card.four-column {
+    flex-basis: 24%;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card h3 {
+    color: #337ab7;
+    font-weight: 400;
+	font-size: 18px;
+	line-height:23px;
+}
+
+.card.background h3 {
+    color: #555e;
+}
+
+.card p {
+    color: #000;
+    font-weight: 400;
+}
+
+.card.background p {
+    color: #000;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card img.icon {
+    width: 30%;
+}
+
+
+/* ******************************* */
+/* ******** MEDIA OBJECT ********* */
+/* ******************************* */
+
+
+
+  .media {
+    display: flex;
+    align-items: flex-start;
+    align-items: center;
+    background: #F6F3EB;
+    padding: 1em;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  .media-object {
+    margin-right: 1em;
+    max-width: 200px;
+  }
+  .media-body {
+    flex: 1;
+    justify-items: center;
+  }
+  .media h3 {
+    margin: 0 0 .5em;
+    color: #337ab7;
+    font-weight: 400;
+  }
+
+.media p {
+    font-weight: 400;
+    margin: 0px 0 0 0;
+  }
+
+.media-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.media-col-2 {
+    flex-basis: 49%;
+
+}
+.media-col-3 {
+    flex-basis: 32%;
+
+}
+
+.media-row-centered {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.media-col-2-centered {
+    flex-basis: 48%;
+    margin-right: 15px;
+}
+
+.media-col-3-centered {
+    flex-basis: 31%;
+    margin-right: 15px;
+}
+
+/* ******* MEDIA WITH DARK BACKGROUND ******** */
+.media.dark-bg {
+    background: #aaa;
+}
+
+.media.dark-bg h3 {
+    color: #fff;
+}
+
+.media.dark-bg p {
+    color: #eee;
+}
+
+ .image-wrapper {
+    position: relative;
+}
+
+.red-box {
+    background-color: #C91F27;
+	opacity: 0.83;
+	position: absolute;
+	bottom:0px;
+	left:0px;
+	text-transform: uppercase;
+	width:100%;
+
+}
+
+.red-box h3{
+    letter-spacing: 1;
+    margin: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+}
+
+/* ******************************* */
+/* ***** TEXT WITH BIG IMAGE ***** */
+/* ******************************* */
+.text-with-big-image .text.col {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.text-with-big-image .col img {
+    width: 100%;
+
+}
+
+.text-with-big-image .text.col .body {
+    padding: 30px;
+	padding-left: 50px;
+}
+
+.text-with-big-image .text.col .body h2 {
+    font-size: 40px;
+    color: var(--text-color-primary);
+    font-weight: 400;
+}
+
+.text-with-big-image .text.col .body p {
+    font-size: 1rem;
+    color: var(--text-color-primary);
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+h2.title-black-box.title-box {
+    font-size: 40px !important;
+    line-height: 36px;
+}
+/* ******************************* */
+/* ******** BLOCKQUOTE *********** */
+/* ******************************* */
+blockquote {
+  background: var(--bg-primary);
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: var(--text-color-primary);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+blockquote p.name {
+  display: block;
+  font-weight: 700!important;
+  margin-bottom: 0;
+}
+blockquote p.role {
+  display: block;
+  font-style: italic;
+  margin: 0;
+}
+
+/* ******************************* */
+/* ********** FOOTER ************* */
+/* ******************************* */
+footer {
+    margin-top: 40px;
+    background-color: #1E1E1E;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 0px 30px 0px;
+    align-items: center;
+}
+
+.footer-divider {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: left;
+    padding: 40px 30px 20px 30px;
+    background-color: #000;
+}
+
+
+.footer-col-social {
+    flex: 1;
+    min-width: 250px;
+}
+
+.socials img {
+
+	height: 40px;
+  margin-right: 8px;
+}
+
+
+.footer-col-logo {
+    max-width: 150px;
+    min-width: 150px;
+    justify-content: right;
+}
+
+
+.footer-logo img{
+   height: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+footer a:hover {
+    color: #eee;
+}
+
+footer ul {
+    margin-top: 0;
+}
+
+footer ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding-left: 2rem;
+}
+
+footer ul li:before {
+    content: "\203A";
+    color: #fff;
+}
+
+
+/* ******************************* */
+/* ***** RESPONSIVE MOBILE ******* */
+/* ******************************* */
+@media (max-width: 767px) {
+
+/* ********* HERO IMAGE ********** */
+    .container  {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+/* ************* HERO ************* */
+    section.hero {
+        height: 270px;
+        padding-top: 0;
+        background-image: none;
+    }
+
+    .hero h1.headline {
+        color: #fff;
+        font-size: 28px;
+        margin-bottom: 0.5rem;
+        font-weight: 400;
+    }
+
+    section.hero2 {
+    height: 300px;
+    padding-top: 80px;
+    background: url(https://sony.gr8people.eu/index.gp?method=cappservices.getPublicImage&cdn=6ea3a7dc1faad79280a7fd4c005750dced1679c6&cid=500056&type=1);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hero2 h1.headline {
+    margin: 0;
+    font-size: 28px;
+    line-height: 30px;
+}
+
+/* *********** MEDIA ************* */
+    .media-row {
+        display: block;
+    }
+    .media-row-centered {
+        display: block;
+    }
+    .media-col-2-centered {
+        margin-right: 0px;
+    }
+    .media-object {
+        max-width: 100px;
+    }
+    .card-container {
+        display: block;
+    }
+/* ********** JUMBOTRON ************ */
+    .jumbotron {
+        padding: 15px;
+    }
+
+    .jumbotron h2 {
+        margin-bottom: 20px;
+    }
+     /* ********** logo ************* */
+    .navbar-brand img {
+        height: 120px;
+    }
+    /* ******* TEXT WITH BIG IMAGE ****** */
+    section.text-with-big-image .container {
+        padding: 0;
+    }
+    .text-with-big-image .row {
+        display: block;
+    }
+    .text-with-big-image img {
+        width: 100%;
+    }
+
+	nav.navbar > img {
+    position: absolute;
+    right: 0px;
+    height: 15px;
+        }
+
+.navbar-menu a {
+    font-size: 15px;
+}
+
+.red-background {
+    background-color: #C91F27;
+	opacity: 0.83;
+	padding: 20px 20px 20px 20px;
+    max-width: 100%;
+}
+
+.hero2 .red-background {
+    background-color: #C91F27;
+    padding: 10px;
+}
+
+section {
+    margin: 20px 0px 20px 0px;
+    overflow: auto;
+}
+
+.title-black-box {
+    background-color: #000;
+	text-transform: uppercase;
+	margin-left:0px;
+	letter-spacing:0;
+
+
+}
+
+h2.title-black-box-2 {
+    background-color: #000;
+	text-transform: uppercase;
+	letter-spacing:0;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.title-box {
+	width: 100%;
+}
+
+.text-with-big-image .text.col .body {
+    padding: 15px;
+	padding-left: 15px;
+}
+
+.row {
+    display: block;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin-bottom: 20px;
+    margin-right: 0px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 20px 20px 0px;
+}
+
+.footer-logo img{
+	  height: 16px;
+
+}
+
+.socials img {
+    height: 30px;
+    width: 30px;
+}
+}
